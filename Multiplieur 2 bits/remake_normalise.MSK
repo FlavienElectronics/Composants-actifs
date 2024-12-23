@@ -1,0 +1,73 @@
+VERSION 23/12/2024 11:17:39
+FIG #C:\Users\Flavien\OneDrive - INSA Toulouse\4A_AE_SE\Composant actif\Multiplieur 2 bits\remake_normalise.MSK
+BB(60,-15,90,2)
+SIMU #1.00
+ZOOM(51,-26,91,14)
+REC(67,-3,4,5,DP)
+REC(67,-9,4,4,DP)
+REC(67,-15,4,4,DP)
+REC(77,-9,4,4,DP)
+REC(81,-8,2,2,DP)
+REC(79,-9,9,4,DP)
+REC(79,-8,2,2,DP)
+REC(83,-8,5,2,DP)
+REC(67,-11,4,2,DP)
+REC(67,-5,4,2,DP)
+REC(84,-9,4,1,DP)
+REC(84,-6,4,1,DP)
+REC(79,-14,9,4,DN)
+REC(77,-14,3,4,DN)
+REC(84,-14,4,1,DN)
+REC(83,-13,5,2,DN)
+REC(72,-9,4,4,DN)
+REC(72,-5,4,2,DN)
+REC(72,-11,4,2,DN)
+REC(72,-15,4,4,DN)
+REC(72,-3,4,5,DN)
+REC(84,-11,4,1,DN)
+REC(79,-13,2,2,DN)
+REC(81,-13,2,2,DN)
+REC(85,-8,2,2,CO)
+REC(85,-13,2,2,CO)
+REC(68,-14,2,2,CO)
+REC(73,-1,2,2,CO)
+REC(68,-1,2,2,CO)
+REC(60,-11,16,2,PO)
+REC(81,-12,2,8,PO)
+REC(81,-14,2,3,PO)
+REC(81,-5,2,2,PO)
+REC(60,-5,16,2,PO)
+REC(76,-1,1,2,ME)
+REC(62,-2,14,4,ME)
+REC(76,-2,1,4,ME)
+REC(62,-11,4,9,ME)
+REC(62,-15,9,4,ME)
+REC(88,-11,2,1,ME)
+REC(88,-10,1,1,ME)
+REC(84,-14,4,4,ME)
+REC(84,-13,4,8,ME)
+REC(89,-10,1,1,ME)
+REC(88,-10,1,1,ME)
+REC(89,-10,1,1,ME)
+REC(80,-1,2,2,CO)
+REC(79,-2,4,4,PO)
+REC(79,-2,4,4,ME)
+REC(81,-4,2,6,PO)
+REC(76,-2,7,4,ME)
+TITLE 74 -13  #Vss
+$0 1000 0 
+TITLE 60 -12  #B
+$- 1000 0 
+TITLE 69 -7  #Vdd
+$1 1000 0 
+TITLE 60 -2  #A
+$- 1000 0 
+TITLE 84 -4  #A
+$- 1000 0 
+TITLE 79 -12  #Vss
+$0 1000 0 
+TITLE 79 -7  #Vdd
+$1 1000 0 
+TITLE 89 -12  #NOT_A
+$- 1000 0 
+FFIG C:\Users\Flavien\OneDrive - INSA Toulouse\4A_AE_SE\Composant actif\Multiplieur 2 bits\remake_normalise.MSK
