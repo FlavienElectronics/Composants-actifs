@@ -47,16 +47,23 @@ def affiche_A_MUL_B_Equal_res(A,B,res):
     if (A * B == res):
         valid = "true"
     print(str(A) + " * " + str(B) + " = " + str(res)+ " -> " + str(valid) + "\n")
+    with open("resultat.txt", "a") as file:
+        file.write(str(A) + " * " + str(B) + " = " + str(res)+ " -> " + str(valid) + "\n\n")
 
 def afficheEqu(vectA,vectB,vectRes):
     if len(vectA) == len(vectB) and len(vectB) == len(vectRes):
         for i in range(0,len(vectA)):
             print("Line : " + str(i))
+            with open("resultat.txt", "a") as file:
+                file.write("Line : " + str(i) + "\n")
             affiche_A_MUL_B_Equal_res(vectA[i],vectB[i],vectRes[i])
         
 
 
-dataList = pd.read_csv("MULTIPLIEUR_4_BITS.csv")
+dataList = pd.read_csv("MULTIPLIEUR_4_BITS_20n.csv")
+
+with open("resultat.txt", "w") as file:
+    file.write("\t\t\tResulats : \n")
 
 time = dataList["Time(s)"]
 
@@ -102,9 +109,9 @@ while (i != len(time)):
     if A[0][i] < 0.2 and t_stop == 0:
         t_stop = i
         wide = (t_stop - t_start)
-        plt.vlines(x=time[t_start+int(wide/2)], ymin=-0.2, ymax=17.5, color = 'y', linestyle='--', linewidth=0.5)
+        plt.vlines(x=time[t_start+int(wide/2)], ymin=-0.2, ymax=18, color = 'y', linestyle='--', linewidth=0.5)
         if t_stop + int(wide/2) < len(time):
-            plt.vlines(x=time[t_stop+int(wide/2)], ymin=-0.2, ymax=17.5, color = 'g', linestyle='--', linewidth=0.5)
+            plt.vlines(x=time[t_stop+int(wide/2)], ymin=-0.2, ymax=18, color = 'g', linestyle='--', linewidth=0.5)
 
         store(A,A_value,len(A),0,1,t_start,t_stop,wide,len(time))
         store(B,B_value,len(B),5,1,t_start,t_stop,wide,len(time))

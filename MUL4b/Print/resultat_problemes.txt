@@ -1,0 +1,1198 @@
+			Resulats : 
+Line : 0
+1 * 0 = 127 -> false
+
+Line : 1
+2 * 0 = 60 -> false
+
+Line : 2
+3 * 0 = 28 -> false
+
+Line : 3
+4 * 0 = 0 -> true
+
+Line : 4
+5 * 0 = 0 -> true
+
+Line : 5
+6 * 0 = 0 -> true
+
+Line : 6
+7 * 0 = 0 -> true
+
+Line : 7
+8 * 0 = 0 -> true
+
+Line : 8
+9 * 0 = 0 -> true
+
+Line : 9
+10 * 0 = 0 -> true
+
+Line : 10
+11 * 0 = 0 -> true
+
+Line : 11
+12 * 0 = 0 -> true
+
+Line : 12
+13 * 0 = 0 -> true
+
+Line : 13
+14 * 0 = 0 -> true
+
+Line : 14
+15 * 0 = 0 -> true
+
+Line : 15
+0 * 1 = 0 -> true
+
+Line : 16
+1 * 1 = 1 -> true
+
+Line : 17
+2 * 1 = 2 -> true
+
+Line : 18
+3 * 1 = 3 -> true
+
+Line : 19
+4 * 1 = 4 -> true
+
+Line : 20
+5 * 1 = 5 -> true
+
+Line : 21
+6 * 1 = 6 -> true
+
+Line : 22
+7 * 1 = 7 -> true
+
+Line : 23
+8 * 1 = 8 -> true
+
+Line : 24
+9 * 1 = 9 -> true
+
+Line : 25
+10 * 1 = 10 -> true
+
+Line : 26
+11 * 1 = 11 -> true
+
+Line : 27
+12 * 1 = 12 -> true
+
+Line : 28
+13 * 1 = 13 -> true
+
+Line : 29
+14 * 1 = 14 -> true
+
+Line : 30
+15 * 1 = 15 -> true
+
+Line : 31
+0 * 2 = 0 -> true
+
+Line : 32
+1 * 2 = 2 -> true
+
+Line : 33
+2 * 2 = 4 -> true
+
+Line : 34
+3 * 2 = 6 -> true
+
+Line : 35
+4 * 2 = 8 -> true
+
+Line : 36
+5 * 2 = 10 -> true
+
+Line : 37
+6 * 2 = 12 -> true
+
+Line : 38
+7 * 2 = 14 -> true
+
+Line : 39
+8 * 2 = 16 -> true
+
+Line : 40
+9 * 2 = 18 -> true
+
+Line : 41
+10 * 2 = 20 -> true
+
+Line : 42
+11 * 2 = 22 -> true
+
+Line : 43
+12 * 2 = 24 -> true
+
+Line : 44
+13 * 2 = 26 -> true
+
+Line : 45
+14 * 2 = 28 -> true
+
+Line : 46
+15 * 2 = 30 -> true
+
+Line : 47
+0 * 3 = 0 -> true
+
+Line : 48
+1 * 3 = 3 -> true
+
+Line : 49
+2 * 3 = 2 -> false
+
+Line : 50
+3 * 3 = 5 -> false
+
+Line : 51
+4 * 3 = 8 -> false
+
+Line : 52
+5 * 3 = 15 -> true
+
+Line : 53
+6 * 3 = 14 -> false
+
+Line : 54
+7 * 3 = 1 -> false
+
+Line : 55
+8 * 3 = 44 -> false
+
+Line : 56
+9 * 3 = 27 -> true
+
+Line : 57
+10 * 3 = 26 -> false
+
+Line : 58
+11 * 3 = 29 -> false
+
+Line : 59
+12 * 3 = 16 -> false
+
+Line : 60
+13 * 3 = 39 -> true
+
+Line : 61
+14 * 3 = 38 -> false
+
+Line : 62
+15 * 3 = 57 -> false
+
+Line : 63
+0 * 4 = 4 -> false
+
+Line : 64
+1 * 4 = 0 -> false
+
+Line : 65
+2 * 4 = 4 -> false
+
+Line : 66
+3 * 4 = 8 -> false
+
+Line : 67
+4 * 4 = 20 -> false
+
+Line : 68
+5 * 4 = 16 -> false
+
+Line : 69
+6 * 4 = 20 -> false
+
+Line : 70
+7 * 4 = 24 -> false
+
+Line : 71
+8 * 4 = 36 -> false
+
+Line : 72
+9 * 4 = 32 -> false
+
+Line : 73
+10 * 4 = 36 -> false
+
+Line : 74
+11 * 4 = 40 -> false
+
+Line : 75
+12 * 4 = 52 -> false
+
+Line : 76
+13 * 4 = 48 -> false
+
+Line : 77
+14 * 4 = 52 -> false
+
+Line : 78
+15 * 4 = 56 -> false
+
+Line : 79
+0 * 5 = 4 -> false
+
+Line : 80
+1 * 5 = 1 -> false
+
+Line : 81
+2 * 5 = 6 -> false
+
+Line : 82
+3 * 5 = 11 -> false
+
+Line : 83
+4 * 5 = 24 -> false
+
+Line : 84
+5 * 5 = 21 -> false
+
+Line : 85
+6 * 5 = 26 -> false
+
+Line : 86
+7 * 5 = 31 -> false
+
+Line : 87
+8 * 5 = 44 -> false
+
+Line : 88
+9 * 5 = 41 -> false
+
+Line : 89
+10 * 5 = 46 -> false
+
+Line : 90
+11 * 5 = 51 -> false
+
+Line : 91
+12 * 5 = 32 -> false
+
+Line : 92
+13 * 5 = 93 -> false
+
+Line : 93
+14 * 5 = 66 -> false
+
+Line : 94
+15 * 5 = 71 -> false
+
+Line : 95
+0 * 6 = 4 -> false
+
+Line : 96
+1 * 6 = 2 -> false
+
+Line : 97
+2 * 6 = 0 -> false
+
+Line : 98
+3 * 6 = 14 -> false
+
+Line : 99
+4 * 6 = 28 -> false
+
+Line : 100
+5 * 6 = 26 -> false
+
+Line : 101
+6 * 6 = 24 -> false
+
+Line : 102
+7 * 6 = 22 -> false
+
+Line : 103
+8 * 6 = 84 -> false
+
+Line : 104
+9 * 6 = 50 -> false
+
+Line : 105
+10 * 6 = 48 -> false
+
+Line : 106
+11 * 6 = 62 -> false
+
+Line : 107
+12 * 6 = 44 -> false
+
+Line : 108
+13 * 6 = 74 -> false
+
+Line : 109
+14 * 6 = 72 -> false
+
+Line : 110
+15 * 6 = 70 -> false
+
+Line : 111
+0 * 7 = 4 -> false
+
+Line : 112
+1 * 7 = 3 -> false
+
+Line : 113
+2 * 7 = 6 -> false
+
+Line : 114
+3 * 7 = 13 -> false
+
+Line : 115
+4 * 7 = 20 -> false
+
+Line : 116
+5 * 7 = 31 -> false
+
+Line : 117
+6 * 7 = 18 -> false
+
+Line : 118
+7 * 7 = 25 -> false
+
+Line : 119
+8 * 7 = 72 -> false
+
+Line : 120
+9 * 7 = 59 -> false
+
+Line : 121
+10 * 7 = 62 -> false
+
+Line : 122
+11 * 7 = 69 -> false
+
+Line : 123
+12 * 7 = 92 -> false
+
+Line : 124
+13 * 7 = 87 -> false
+
+Line : 125
+14 * 7 = 74 -> false
+
+Line : 126
+15 * 7 = 81 -> false
+
+Line : 127
+0 * 8 = 32 -> false
+
+Line : 128
+1 * 8 = 0 -> false
+
+Line : 129
+2 * 8 = 8 -> false
+
+Line : 130
+3 * 8 = 16 -> false
+
+Line : 131
+4 * 8 = 56 -> false
+
+Line : 132
+5 * 8 = 32 -> false
+
+Line : 133
+6 * 8 = 40 -> false
+
+Line : 134
+7 * 8 = 48 -> false
+
+Line : 135
+8 * 8 = 88 -> false
+
+Line : 136
+9 * 8 = 64 -> false
+
+Line : 137
+10 * 8 = 72 -> false
+
+Line : 138
+11 * 8 = 80 -> false
+
+Line : 139
+12 * 8 = 120 -> false
+
+Line : 140
+13 * 8 = 96 -> false
+
+Line : 141
+14 * 8 = 104 -> false
+
+Line : 142
+15 * 8 = 112 -> false
+
+Line : 143
+0 * 9 = 8 -> false
+
+Line : 144
+1 * 9 = 1 -> false
+
+Line : 145
+2 * 9 = 10 -> false
+
+Line : 146
+3 * 9 = 19 -> false
+
+Line : 147
+4 * 9 = 44 -> false
+
+Line : 148
+5 * 9 = 37 -> false
+
+Line : 149
+6 * 9 = 46 -> false
+
+Line : 150
+7 * 9 = 55 -> false
+
+Line : 151
+8 * 9 = 96 -> false
+
+Line : 152
+9 * 9 = 73 -> false
+
+Line : 153
+10 * 9 = 82 -> false
+
+Line : 154
+11 * 9 = 91 -> false
+
+Line : 155
+12 * 9 = 68 -> false
+
+Line : 156
+13 * 9 = 109 -> false
+
+Line : 157
+14 * 9 = 118 -> false
+
+Line : 158
+15 * 9 = 191 -> false
+
+Line : 159
+0 * 10 = 104 -> false
+
+Line : 160
+1 * 10 = 2 -> false
+
+Line : 161
+2 * 10 = 12 -> false
+
+Line : 162
+3 * 10 = 22 -> false
+
+Line : 163
+4 * 10 = 32 -> false
+
+Line : 164
+5 * 10 = 42 -> false
+
+Line : 165
+6 * 10 = 36 -> false
+
+Line : 166
+7 * 10 = 62 -> false
+
+Line : 167
+8 * 10 = 104 -> false
+
+Line : 168
+9 * 10 = 82 -> false
+
+Line : 169
+10 * 10 = 92 -> false
+
+Line : 170
+11 * 10 = 102 -> false
+
+Line : 171
+12 * 10 = 64 -> false
+
+Line : 172
+13 * 10 = 122 -> false
+
+Line : 173
+14 * 10 = 116 -> false
+
+Line : 174
+15 * 10 = 142 -> false
+
+Line : 175
+0 * 11 = 88 -> false
+
+Line : 176
+1 * 11 = 3 -> false
+
+Line : 177
+2 * 11 = 10 -> false
+
+Line : 178
+3 * 11 = 21 -> false
+
+Line : 179
+4 * 11 = 48 -> false
+
+Line : 180
+5 * 11 = 47 -> false
+
+Line : 181
+6 * 11 = 38 -> false
+
+Line : 182
+7 * 11 = 49 -> false
+
+Line : 183
+8 * 11 = 100 -> false
+
+Line : 184
+9 * 11 = 91 -> false
+
+Line : 185
+10 * 11 = 98 -> false
+
+Line : 186
+11 * 11 = 109 -> false
+
+Line : 187
+12 * 11 = 72 -> false
+
+Line : 188
+13 * 11 = 135 -> false
+
+Line : 189
+14 * 11 = 190 -> false
+
+Line : 190
+15 * 11 = 137 -> false
+
+Line : 191
+0 * 12 = 124 -> false
+
+Line : 192
+1 * 12 = 0 -> false
+
+Line : 193
+2 * 12 = 12 -> false
+
+Line : 194
+3 * 12 = 24 -> false
+
+Line : 195
+4 * 12 = 84 -> false
+
+Line : 196
+5 * 12 = 48 -> false
+
+Line : 197
+6 * 12 = 60 -> false
+
+Line : 198
+7 * 12 = 72 -> false
+
+Line : 199
+8 * 12 = 132 -> false
+
+Line : 200
+9 * 12 = 96 -> false
+
+Line : 201
+10 * 12 = 108 -> false
+
+Line : 202
+11 * 12 = 120 -> false
+
+Line : 203
+12 * 12 = 244 -> false
+
+Line : 204
+13 * 12 = 144 -> false
+
+Line : 205
+14 * 12 = 156 -> false
+
+Line : 206
+15 * 12 = 168 -> false
+
+Line : 207
+0 * 13 = 36 -> false
+
+Line : 208
+1 * 13 = 1 -> false
+
+Line : 209
+2 * 13 = 14 -> false
+
+Line : 210
+3 * 13 = 27 -> false
+
+Line : 211
+4 * 13 = 80 -> false
+
+Line : 212
+5 * 13 = 53 -> false
+
+Line : 213
+6 * 13 = 50 -> false
+
+Line : 214
+7 * 13 = 79 -> false
+
+Line : 215
+8 * 13 = 148 -> false
+
+Line : 216
+9 * 13 = 105 -> false
+
+Line : 217
+10 * 13 = 118 -> false
+
+Line : 218
+11 * 13 = 131 -> false
+
+Line : 219
+12 * 13 = 248 -> false
+
+Line : 220
+13 * 13 = 189 -> false
+
+Line : 221
+14 * 13 = 154 -> false
+
+Line : 222
+15 * 13 = 247 -> false
+
+Line : 223
+0 * 14 = 92 -> false
+
+Line : 224
+1 * 14 = 2 -> false
+
+Line : 225
+2 * 14 = 8 -> false
+
+Line : 226
+3 * 14 = 30 -> false
+
+Line : 227
+4 * 14 = 92 -> false
+
+Line : 228
+5 * 14 = 58 -> false
+
+Line : 229
+6 * 14 = 48 -> false
+
+Line : 230
+7 * 14 = 70 -> false
+
+Line : 231
+8 * 14 = 180 -> false
+
+Line : 232
+9 * 14 = 114 -> false
+
+Line : 233
+10 * 14 = 120 -> false
+
+Line : 234
+11 * 14 = 142 -> false
+
+Line : 235
+12 * 14 = 236 -> false
+
+Line : 236
+13 * 14 = 170 -> false
+
+Line : 237
+14 * 14 = 160 -> false
+
+Line : 238
+15 * 14 = 246 -> false
+
+Line : 239
+0 * 15 = 100 -> false
+
+Line : 240
+1 * 15 = 3 -> false
+
+Line : 241
+2 * 15 = 14 -> false
+
+Line : 242
+3 * 15 = 29 -> false
+
+Line : 243
+4 * 15 = 92 -> false
+
+Line : 244
+5 * 15 = 63 -> false
+
+Line : 245
+6 * 15 = 58 -> false
+
+Line : 246
+7 * 15 = 73 -> false
+
+Line : 247
+8 * 15 = 176 -> false
+
+Line : 248
+9 * 15 = 187 -> false
+
+Line : 249
+10 * 15 = 134 -> false
+
+Line : 250
+11 * 15 = 149 -> false
+
+Line : 251
+12 * 15 = 228 -> false
+
+Line : 252
+13 * 15 = 183 -> false
+
+Line : 253
+14 * 15 = 178 -> false
+
+Line : 254
+15 * 15 = 193 -> false
+
+Line : 255
+0 * 0 = 104 -> false
+
+Line : 256
+1 * 0 = 0 -> true
+
+Line : 257
+2 * 0 = 0 -> true
+
+Line : 258
+3 * 0 = 0 -> true
+
+Line : 259
+4 * 0 = 0 -> true
+
+Line : 260
+5 * 0 = 0 -> true
+
+Line : 261
+6 * 0 = 0 -> true
+
+Line : 262
+7 * 0 = 0 -> true
+
+Line : 263
+8 * 0 = 0 -> true
+
+Line : 264
+9 * 0 = 0 -> true
+
+Line : 265
+10 * 0 = 0 -> true
+
+Line : 266
+11 * 0 = 0 -> true
+
+Line : 267
+12 * 0 = 0 -> true
+
+Line : 268
+13 * 0 = 0 -> true
+
+Line : 269
+14 * 0 = 0 -> true
+
+Line : 270
+15 * 0 = 0 -> true
+
+Line : 271
+0 * 1 = 0 -> true
+
+Line : 272
+1 * 1 = 1 -> true
+
+Line : 273
+2 * 1 = 2 -> true
+
+Line : 274
+3 * 1 = 3 -> true
+
+Line : 275
+4 * 1 = 4 -> true
+
+Line : 276
+5 * 1 = 5 -> true
+
+Line : 277
+6 * 1 = 6 -> true
+
+Line : 278
+7 * 1 = 7 -> true
+
+Line : 279
+8 * 1 = 8 -> true
+
+Line : 280
+9 * 1 = 9 -> true
+
+Line : 281
+10 * 1 = 10 -> true
+
+Line : 282
+11 * 1 = 11 -> true
+
+Line : 283
+12 * 1 = 12 -> true
+
+Line : 284
+13 * 1 = 13 -> true
+
+Line : 285
+14 * 1 = 14 -> true
+
+Line : 286
+15 * 1 = 15 -> true
+
+Line : 287
+0 * 2 = 0 -> true
+
+Line : 288
+1 * 2 = 2 -> true
+
+Line : 289
+2 * 2 = 4 -> true
+
+Line : 290
+3 * 2 = 6 -> true
+
+Line : 291
+4 * 2 = 8 -> true
+
+Line : 292
+5 * 2 = 10 -> true
+
+Line : 293
+6 * 2 = 12 -> true
+
+Line : 294
+7 * 2 = 14 -> true
+
+Line : 295
+8 * 2 = 16 -> true
+
+Line : 296
+9 * 2 = 18 -> true
+
+Line : 297
+10 * 2 = 20 -> true
+
+Line : 298
+11 * 2 = 22 -> true
+
+Line : 299
+12 * 2 = 24 -> true
+
+Line : 300
+13 * 2 = 26 -> true
+
+Line : 301
+14 * 2 = 28 -> true
+
+Line : 302
+15 * 2 = 30 -> true
+
+Line : 303
+0 * 3 = 0 -> true
+
+Line : 304
+1 * 3 = 3 -> true
+
+Line : 305
+2 * 3 = 2 -> false
+
+Line : 306
+3 * 3 = 5 -> false
+
+Line : 307
+4 * 3 = 8 -> false
+
+Line : 308
+5 * 3 = 15 -> true
+
+Line : 309
+6 * 3 = 14 -> false
+
+Line : 310
+7 * 3 = 1 -> false
+
+Line : 311
+8 * 3 = 44 -> false
+
+Line : 312
+9 * 3 = 27 -> true
+
+Line : 313
+10 * 3 = 26 -> false
+
+Line : 314
+11 * 3 = 29 -> false
+
+Line : 315
+12 * 3 = 16 -> false
+
+Line : 316
+13 * 3 = 39 -> true
+
+Line : 317
+14 * 3 = 38 -> false
+
+Line : 318
+15 * 3 = 57 -> false
+
+Line : 319
+0 * 4 = 4 -> false
+
+Line : 320
+1 * 4 = 0 -> false
+
+Line : 321
+2 * 4 = 4 -> false
+
+Line : 322
+3 * 4 = 8 -> false
+
+Line : 323
+4 * 4 = 20 -> false
+
+Line : 324
+5 * 4 = 16 -> false
+
+Line : 325
+6 * 4 = 20 -> false
+
+Line : 326
+7 * 4 = 24 -> false
+
+Line : 327
+8 * 4 = 36 -> false
+
+Line : 328
+9 * 4 = 32 -> false
+
+Line : 329
+10 * 4 = 36 -> false
+
+Line : 330
+11 * 4 = 40 -> false
+
+Line : 331
+12 * 4 = 52 -> false
+
+Line : 332
+13 * 4 = 48 -> false
+
+Line : 333
+14 * 4 = 52 -> false
+
+Line : 334
+15 * 4 = 56 -> false
+
+Line : 335
+0 * 5 = 4 -> false
+
+Line : 336
+1 * 5 = 1 -> false
+
+Line : 337
+2 * 5 = 6 -> false
+
+Line : 338
+3 * 5 = 11 -> false
+
+Line : 339
+4 * 5 = 24 -> false
+
+Line : 340
+5 * 5 = 21 -> false
+
+Line : 341
+6 * 5 = 26 -> false
+
+Line : 342
+7 * 5 = 31 -> false
+
+Line : 343
+8 * 5 = 44 -> false
+
+Line : 344
+9 * 5 = 41 -> false
+
+Line : 345
+10 * 5 = 46 -> false
+
+Line : 346
+11 * 5 = 51 -> false
+
+Line : 347
+12 * 5 = 32 -> false
+
+Line : 348
+13 * 5 = 93 -> false
+
+Line : 349
+14 * 5 = 66 -> false
+
+Line : 350
+15 * 5 = 71 -> false
+
+Line : 351
+0 * 6 = 4 -> false
+
+Line : 352
+1 * 6 = 2 -> false
+
+Line : 353
+2 * 6 = 0 -> false
+
+Line : 354
+3 * 6 = 14 -> false
+
+Line : 355
+4 * 6 = 28 -> false
+
+Line : 356
+5 * 6 = 26 -> false
+
+Line : 357
+6 * 6 = 24 -> false
+
+Line : 358
+7 * 6 = 22 -> false
+
+Line : 359
+8 * 6 = 84 -> false
+
+Line : 360
+9 * 6 = 50 -> false
+
+Line : 361
+10 * 6 = 48 -> false
+
+Line : 362
+11 * 6 = 62 -> false
+
+Line : 363
+12 * 6 = 44 -> false
+
+Line : 364
+13 * 6 = 74 -> false
+
+Line : 365
+14 * 6 = 72 -> false
+
+Line : 366
+15 * 6 = 70 -> false
+
+Line : 367
+0 * 7 = 4 -> false
+
+Line : 368
+1 * 7 = 3 -> false
+
+Line : 369
+2 * 7 = 6 -> false
+
+Line : 370
+3 * 7 = 13 -> false
+
+Line : 371
+4 * 7 = 20 -> false
+
+Line : 372
+5 * 7 = 31 -> false
+
+Line : 373
+6 * 7 = 18 -> false
+
+Line : 374
+7 * 7 = 25 -> false
+
+Line : 375
+8 * 7 = 72 -> false
+
+Line : 376
+9 * 7 = 59 -> false
+
+Line : 377
+10 * 7 = 62 -> false
+
+Line : 378
+11 * 7 = 69 -> false
+
+Line : 379
+12 * 7 = 92 -> false
+
+Line : 380
+13 * 7 = 87 -> false
+
+Line : 381
+14 * 7 = 74 -> false
+
+Line : 382
+15 * 7 = 81 -> false
+
+Line : 383
+0 * 8 = 32 -> false
+
+Line : 384
+1 * 8 = 0 -> false
+
+Line : 385
+2 * 8 = 8 -> false
+
+Line : 386
+3 * 8 = 16 -> false
+
+Line : 387
+4 * 8 = 40 -> false
+
+Line : 388
+5 * 8 = 32 -> false
+
+Line : 389
+6 * 8 = 40 -> false
+
+Line : 390
+7 * 8 = 48 -> false
+
+Line : 391
+8 * 8 = 72 -> false
+
+Line : 392
+9 * 8 = 64 -> false
+
+Line : 393
+10 * 8 = 72 -> false
+
+Line : 394
+11 * 8 = 80 -> false
+
+Line : 395
+12 * 8 = 104 -> false
+
+Line : 396
+13 * 8 = 96 -> false
+
+Line : 397
+14 * 8 = 104 -> false
+
+Line : 398
+15 * 8 = 112 -> false
+
