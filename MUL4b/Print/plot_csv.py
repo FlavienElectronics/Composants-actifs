@@ -39,6 +39,17 @@ def vectorToDec(readArray,storeArray,size):
         storeArray.append(res)
 
 
+# A : operand 1
+# B : operant 2
+# res : supposed result of A × B
+def affiche_A_MUL_B_Equal_res(A,B,res):
+    print(str(A) + " * " + str(B) + " = " + str(res) + "\n")
+
+def afficheEqu(vectA,vectB,vectRes):
+    if len(vectA) == len(vectB) and len(vectB) == len(vectRes):
+        for i in range(0,len(vectA)):
+            affiche_A_MUL_B_Equal_res(vectA[i],vectB[i],vectRes[i])
+        
 
 
 
@@ -110,9 +121,7 @@ vectorToDec(A_value,decA,4)
 vectorToDec(B_value,decB,4)
 vectorToDec(P_value,decP,8)
 
-print(decA)
-print(decB)
-print(decP)
+afficheEqu(decA,decB,decP)
 
 
 
