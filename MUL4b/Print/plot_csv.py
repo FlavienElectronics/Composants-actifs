@@ -1,5 +1,66 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+import numpy as np
+
+# readVector : containing raw data
+# index : number of bit to store
+# offset : minimum value of offset
+# shift : value of bit's shift (ex 0.5 -> base offset of D0 = offset, base offset of D1 = offset + 0.5)
+# start : starting of rising edge
+# stop : starting of falling edge
+# wide : wide of the high state
+def store(readVector,index,offset,shift,start,stop,wide):
+    vect = []
+    for i in range(0,index):
+        if readVector[0][start+int(wide/2)]-offset*i > 0.4:
+            vect.append(1)
+        else:
+            vect.append(0)
+
+    if readVector[0][stop+int(wide/2)]-0 > 0.4:
+        vect.append(1)
+    else:
+        vect.append(0)
+    if readVector[1][stop+int(wide/2)]-1 > 0.4:
+        vect.append(1)
+    else:
+        vect.append(0)
+    
+    if readVector[2][stop+int(wide/2)]-2 > 0.4:
+        vect.append(1)
+    else:
+        vect.append(0)
+    
+    if readVector[3][stop+int(wide/2)]-3 > 0.4:
+        vect.append(1)
+    else:
+        vect.append(0)
+
+    readVector_vector.append(vect)
+    vect = []
+    if readVector[0][start+middle]-0 > 0.4:
+        vect.append(1)
+    else:
+        vect.append(0)
+    if readVector[1][start+middle]-1 > 0.4:
+        vect.append(1)
+    else:
+        vect.append(0)
+    
+    if readVector[2][start+middle]-2 > 0.4:
+        vect.append(1)
+    else:
+        vect.append(0)
+    
+    if readVector[3][start+middle]-3 > 0.4:
+        vect.append(1)
+    else:
+        vect.append(0)
+    A_vector.append(vect)
+
+
+
+
 
 dataList = pd.read_csv("MULTIPLIEUR_4_BITS.csv")
 
@@ -33,6 +94,10 @@ for i in range(0,len(A)):
 for i in range(0,len(B)):
     plt.plot(time,B[i],label ="B"+str(i))
 
+A_value = []
+B_value = []
+P_value = []
+
 t_start = 0
 t_stop = -1
 while (i != len(time)):
@@ -42,10 +107,37 @@ while (i != len(time)):
     
     if A[0][i] < 0.2 and t_stop == 0:
         t_stop = i
-        middle = int((t_stop - t_start) / 2)
-        plt.vlines(x=time[t_start+middle], ymin=0, ymax=18, color='k', linestyle='-', linewidth=1)
+        wide = int((t_stop - t_start) / 2)
+        plt.vlines(x=time[t_start+int(wide/2)], ymin=-0.2, ymax=17.5, color = 'y', linestyle='--', linewidth=0.5)
+        if t_stop + int(wide/2) < len(time):
+            plt.vlines(x=time[t_stop+int(wide/2)], ymin=-0.2, ymax=17.5, color = 'g', linestyle='--', linewidth=0.5)
         t_start = 0
+
+        B_vect = []
+        P_vect = []
+
+        B_vect.append(B[0][t_stop+middle]-5)
+        B_vect.append(B[1][t_stop+middle]-6)
+        B_vect.append(B[2][t_stop+middle]-7)
+        B_vect.append(B[3][t_stop+middle]-8)
+
+        P_vect.append(P[0][t_stop+middle]-10)
+        P_vect.append(P[1][t_stop+middle]-11)
+        P_vect.append(P[2][t_stop+middle]-12)
+        P_vect.append(P[3][t_stop+middle]-13)
+        P_vect.append(P[4][t_stop+middle]-14)
+        P_vect.append(P[5][t_stop+middle]-15)
+        P_vect.append(P[6][t_stop+middle]-16) 
+        P_vect.append(P[7][t_stop+middle]-17)
+
+        B_value.append(B_vect)
+        P_value.append(P_vect)
     i+=1
     
 plt.show()
+
+#plt.figure()
+#x = np.linspace(0,len(A_value))
+#plt.plot(x,A_value)
+#plt.show()
 
