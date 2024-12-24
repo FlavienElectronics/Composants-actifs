@@ -43,14 +43,17 @@ def vectorToDec(readArray,storeArray,size):
 # B : operant 2
 # res : supposed result of A × B
 def affiche_A_MUL_B_Equal_res(A,B,res):
-    print(str(A) + " * " + str(B) + " = " + str(res) + "\n")
+    valid = "false"
+    if (A * B == res):
+        valid = "true"
+    print(str(A) + " * " + str(B) + " = " + str(res)+ " -> " + str(valid) + "\n")
 
 def afficheEqu(vectA,vectB,vectRes):
     if len(vectA) == len(vectB) and len(vectB) == len(vectRes):
         for i in range(0,len(vectA)):
+            print("Line : " + str(i))
             affiche_A_MUL_B_Equal_res(vectA[i],vectB[i],vectRes[i])
         
-
 
 
 dataList = pd.read_csv("MULTIPLIEUR_4_BITS.csv")
@@ -111,7 +114,6 @@ while (i != len(time)):
     
     i+=1
     
-plt.show()
 
 decA = []
 decB = []
@@ -123,6 +125,7 @@ vectorToDec(P_value,decP,8)
 
 afficheEqu(decA,decB,decP)
 
+plt.show()
 
 
 
