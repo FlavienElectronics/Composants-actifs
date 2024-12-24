@@ -28,6 +28,19 @@ def store(readVector,storeVector,index,offset,shift,start,stop,wide,limit):
                 vect.append(0)
         storeVector.append(vect)
 
+# readArray : array containing the binary vectors
+# storeArray : array containing the converted binary value
+# size : number of bits coding the binary vectors
+def vectorToDec(readArray,storeArray,size):
+    for i in range(0,len(readArray)):
+        res = 0
+        for j in range(0,size):
+            res += int(readArray[i][j]) << j
+        storeArray.append(res)
+
+
+
+
 
 dataList = pd.read_csv("MULTIPLIEUR_4_BITS.csv")
 
@@ -89,9 +102,20 @@ while (i != len(time)):
     
 plt.show()
 
-plt.figure()
-x = np.arange(0,len(A_value))
-plt.plot(x,A_value)
-plt.show()
+decA = []
+decB = []
+decP = []
+
+vectorToDec(A_value,decA,4)
+vectorToDec(B_value,decB,4)
+vectorToDec(P_value,decP,8)
+
+print(decA)
+print(decB)
+print(decP)
+
+
+
+
 
 
