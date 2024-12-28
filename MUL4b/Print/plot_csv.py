@@ -2,6 +2,13 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
+class data:
+    def __init__(self,data,time_idx):
+        self.data = data
+        self.time_idx = time_idx
+    
+
+
 # readVector : containing raw data
 # index : number of bit to store
 # offset : minimum value of offset
@@ -14,18 +21,18 @@ def store(readVector,storeVector,index,offset,shift,start,stop,wide,limit):
     vect = []
     for i in range(0,index):
         if readVector[i][start+int(wide/2)]-(shift*i+offset) > 0.4:
-            vect.append(1)
+            vect.append(data(1,start+int(wide/2)))
         else:
-            vect.append(0)
+            vect.append(data(0,start+int(wide/2)))
     storeVector.append(vect)
     vect = []
 
     if stop+int(wide/2) < limit:
         for i in range(0,index):
             if readVector[i][stop+int(wide/2)]-(shift*i+offset) > 0.4:
-                vect.append(1)
+                vect.append(data(1,stop+int(wide/2)))
             else:
-                vect.append(0)
+                vect.append(data(0,stop+int(wide/2)))
         storeVector.append(vect)
 
 # readArray : array containing the binary vectors
@@ -35,31 +42,33 @@ def vectorToDec(readArray,storeArray,size):
     for i in range(0,len(readArray)):
         res = 0
         for j in range(0,size):
-            res += int(readArray[i][j]) << j
-        storeArray.append(res)
-
+            res += int(readArray[i][j].data) << j
+        storeArray.append(data(res,int(readArray[i][j].time_idx)))
 
 # A : operand 1
 # B : operant 2
 # res : supposed result of A × B
 def affiche_A_MUL_B_Equal_res(A,B,res):
     valid = "false"
-    if (A * B == res):
+    if (int(A.data) * int(B.data) == int(res.data)):
         valid = "true"
-    print(str(A) + " * " + str(B) + " = " + str(res)+ " -> " + str(valid) + "\n")
+    print(str(A.data) + " * " + str(B.data) + " = " + str(res.data)+ " -> " + str(valid) + "\n")
     with open("resultat.txt", "a") as file:
-        file.write(str(A) + " * " + str(B) + " = " + str(res)+ " -> " + str(valid) + "\n\n")
+        file.write(str(A.data) + " * " + str(B.data) + " = " + str(res.data)+ " -> " + str(valid) + "\n\n")
+    return (valid)
 
-def afficheEqu(vectA,vectB,vectRes):
+def plotLine(x,col):
+    plt.vlines(x, ymin=-0.2, ymax=18, color = col, linestyle='--', linewidth=0.5)
+
+
+def afficheEqu(vectA,vectB,vectRes,time):
     if len(vectA) == len(vectB) and len(vectB) == len(vectRes):
         for i in range(0,len(vectA)):
             print("Line : " + str(i))
             with open("resultat.txt", "a") as file:
                 file.write("Line : " + str(i) + "\n")
-            affiche_A_MUL_B_Equal_res(vectA[i],vectB[i],vectRes[i])
-
-def plotLine(x,col):
-    plt.vlines(x, ymin=-0.2, ymax=18, color = col, linestyle='--', linewidth=0.5)
+            if(affiche_A_MUL_B_Equal_res(vectA[i],vectB[i],vectRes[i]) == "false"):
+                plotLine(time[vectA[i].time_idx],'r')
 
 
 # time : vector containing time information
@@ -78,9 +87,9 @@ def readGraphic(time,clock,A,B,P,A_res,B_res,P_res):
         if clock[i] < 0.2 and t_stop == 0:
             t_stop = i
             wide = (t_stop - t_start)
-            plotLine(time[t_start+int(wide/2)],'y')
-            if t_stop + int(wide/2) < len(time):
-                plotLine(time[t_start+int(wide/2)],'g')
+            #plotLine(time[t_start+int(wide/2)],'y')
+            #if t_stop + int(wide/2) < len(time):
+                #plotLine(time[t_stop+int(wide/2)],'g')
 
             store(A,A_res,len(A),0,1,t_start,t_stop,wide,len(time))
             store(B,B_res,len(B),5,1,t_start,t_stop,wide,len(time))
@@ -133,7 +142,6 @@ P_value = []
 
 readGraphic(time,A[0],A,B,P,A_value,B_value,P_value)
     
-
 decA = []
 decB = []
 decP = []
@@ -142,7 +150,9 @@ vectorToDec(A_value,decA,4)
 vectorToDec(B_value,decB,4)
 vectorToDec(P_value,decP,8)
 
-afficheEqu(decA,decB,decP)
+afficheEqu(decA,decB,decP,time)
+
+plotLine(2*10**-7,'y')
 
 plt.show()
 
