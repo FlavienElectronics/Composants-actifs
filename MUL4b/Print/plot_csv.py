@@ -20,19 +20,19 @@ class data:
 def store(readVector,storeVector,index,offset,shift,start,stop,wide,limit):
     vect = []
     for i in range(0,index):
-        if readVector[i][start+int(wide/2)]-(shift*i+offset) > 0.4:
-            vect.append(data(1,start+int(wide/2)))
+        if readVector[i][start+int(9*wide/10)]-(shift*i+offset) > 0.4:
+            vect.append(data(1,start+int(9*wide/10)))
         else:
-            vect.append(data(0,start+int(wide/2)))
+            vect.append(data(0,start+int(9*wide/10)))
     storeVector.append(vect)
     vect = []
 
     if stop+int(wide/2) < limit:
         for i in range(0,index):
-            if readVector[i][stop+int(wide/2)]-(shift*i+offset) > 0.4:
-                vect.append(data(1,stop+int(wide/2)))
+            if readVector[i][stop+int(9*wide/10)]-(shift*i+offset) > 0.4:
+                vect.append(data(1,stop+int(9*wide/10)))
             else:
-                vect.append(data(0,stop+int(wide/2)))
+                vect.append(data(0,stop+int(9*wide/10)))
         storeVector.append(vect)
 
 # readArray : array containing the binary vectors
@@ -101,7 +101,9 @@ def readGraphic(time,clock,A,B,P,A_res,B_res,P_res):
         
 
 
-dataList = pd.read_csv("MULTIPLIEUR_4_BITS.csv")
+dataList = pd.read_csv("MUL4_fini_rm_label_slow_re_more_3.csv")
+
+
 
 with open("resultat.txt", "w") as file:
     file.write("\t\t\tResulats : \n")
@@ -151,8 +153,6 @@ vectorToDec(B_value,decB,4)
 vectorToDec(P_value,decP,8)
 
 afficheEqu(decA,decB,decP,time)
-
-plotLine(2*10**-7,'y')
 
 plt.show()
 
