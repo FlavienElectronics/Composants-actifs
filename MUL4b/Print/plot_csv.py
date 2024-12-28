@@ -57,10 +57,42 @@ def afficheEqu(vectA,vectB,vectRes):
             with open("resultat.txt", "a") as file:
                 file.write("Line : " + str(i) + "\n")
             affiche_A_MUL_B_Equal_res(vectA[i],vectB[i],vectRes[i])
+
+def plotLine(x,col):
+    plt.vlines(x, ymin=-0.2, ymax=18, color = col, linestyle='--', linewidth=0.5)
+
+
+# time : vector containing time information
+# clock : vector containing the base vector that varies the most
+# A_res,B_res,P_res : vector that will contain the results
+# A,B,P : vector that contain the raw input
+def readGraphic(time,clock,A,B,P,A_res,B_res,P_res):
+    t_start = 0
+    t_stop = -1
+    i = 0
+    while (i != len(time)):
+        if clock[i] > 0.4 and t_start == 0:
+            t_start = i
+            t_stop = 0
+        
+        if clock[i] < 0.2 and t_stop == 0:
+            t_stop = i
+            wide = (t_stop - t_start)
+            plotLine(time[t_start+int(wide/2)],'y')
+            if t_stop + int(wide/2) < len(time):
+                plotLine(time[t_start+int(wide/2)],'g')
+
+            store(A,A_res,len(A),0,1,t_start,t_stop,wide,len(time))
+            store(B,B_res,len(B),5,1,t_start,t_stop,wide,len(time))
+            store(P,P_res,len(P),10,1,t_start,t_stop,wide,len(time))
+
+            t_start = 0
+        
+        i+=1
         
 
 
-dataList = pd.read_csv("MULTIPLIEUR_4_BITS_20n.csv")
+dataList = pd.read_csv("MULTIPLIEUR_4_BITS.csv")
 
 with open("resultat.txt", "w") as file:
     file.write("\t\t\tResulats : \n")
@@ -99,27 +131,7 @@ A_value = []
 B_value = []
 P_value = []
 
-t_start = 0
-t_stop = -1
-while (i != len(time)):
-    if A[0][i] > 0.4 and t_start == 0:
-        t_start = i
-        t_stop = 0
-    
-    if A[0][i] < 0.2 and t_stop == 0:
-        t_stop = i
-        wide = (t_stop - t_start)
-        plt.vlines(x=time[t_start+int(wide/2)], ymin=-0.2, ymax=18, color = 'y', linestyle='--', linewidth=0.5)
-        if t_stop + int(wide/2) < len(time):
-            plt.vlines(x=time[t_stop+int(wide/2)], ymin=-0.2, ymax=18, color = 'g', linestyle='--', linewidth=0.5)
-
-        store(A,A_value,len(A),0,1,t_start,t_stop,wide,len(time))
-        store(B,B_value,len(B),5,1,t_start,t_stop,wide,len(time))
-        store(P,P_value,len(P),10,1,t_start,t_stop,wide,len(time))
-
-        t_start = 0
-    
-    i+=1
+readGraphic(time,A[0],A,B,P,A_value,B_value,P_value)
     
 
 decA = []
